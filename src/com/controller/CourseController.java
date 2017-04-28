@@ -68,6 +68,8 @@ public class CourseController {
 			mc.set("num "+id, 12*60*60, course);			
 		}
 		
+		
+		
 		return null;
 		
 		
