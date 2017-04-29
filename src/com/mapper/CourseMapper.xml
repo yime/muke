@@ -32,7 +32,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   </select>
   
   <select id="getCoursesByTeacher" parameterType="Course" resultMap="courseMap">
-  		select * from course where name=#{teacherName}
+  		select * from course where teacherName=#{teacherName}
   </select>
   
   <select id="getCoursesByID" parameterType="int" resultMap="courseMap">
