@@ -4,6 +4,6 @@ import java.util.List;
 import com.po.Video;
 
 public interface VideoMapper {
-	public List<Video> getAllVideos();
+	public List<Video> getVideos();
 
 }

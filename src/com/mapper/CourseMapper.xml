@@ -24,7 +24,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   </delete>
   
   <select id="getCoursesByName" parameterType="Course" resultMap="courseMap">
-  		select * from course where name=#{courseName}
+  		select * from course where name like '%${courseName}%'
   </select>
   
   <select id="getCoursesByCategory" parameterType="Course" resultMap="courseMap">

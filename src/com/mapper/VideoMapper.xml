@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.mapper.VideoMapper">
+
+<resultMap type="Video" id="videoMap">
+	<result property="id" column="id"/>
+	<result property="title" column="title"/>
+	<result property="content" column="content"/>
+	<result property="userName" column="user"/>
+	<result property="date" column="date"/>
+	<result property="count" column="count"/>
+</resultMap>
+
+<select id="getVideos" parameterType="Video" resultMap="videoMap">
+
+select * from video where chapterId=#{chapterId}
+
+</select>
+   
+</mapper>
