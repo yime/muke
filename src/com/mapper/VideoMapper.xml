@@ -11,9 +11,9 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	<result property="chapterId" column="chapterId"/>
 </resultMap>
 
-<select id="getVideos" parameterType="Video" resultMap="videoMap">
+<select id="getVideos" parameterType="Chapter" resultMap="videoMap">
 
-	select * from video where chapterId=#{chapterId}
+	select * from video where id=#{chapterId}
 
 </select>
    
