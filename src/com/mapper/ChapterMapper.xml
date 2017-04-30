@@ -10,8 +10,8 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		<id property="id" column="id"/>
 		<result property="name" column="name"/>
 		<result property="courseId" column="course_id"/>
-		<collection property="videoList" column="chapter_video_id" ofType="Video">
-			<id property="id" column="videoId"/>
+		<collection property="videoList" column="id" ofType="com.po.Video">
+			<id property="id" column="video_id"/>
 			<result property="name" column="video_name"/>
 		</collection>
 			
@@ -20,7 +20,8 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	
 	<select id="getChapters" parameterType="Course" resultType="chapterMap">
 	
-	select * from chapter where id=#{courseId}
+	select ch.id as id, ch.name as name, co.course_name as course_name
+	 from chapter ch join course co on ch.course_id=co.id where co.id=#{courseId}
 	
 	</select>
 	

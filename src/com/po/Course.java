@@ -7,7 +7,7 @@ public class Course {
 	private int id;
 	private String teacherName;
 	private String courseName;
-	private int count;
+	private int count;//选课人数
 	private String content;//内容介绍
 	private String category;
 	private Date date;

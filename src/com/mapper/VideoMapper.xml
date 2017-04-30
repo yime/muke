@@ -14,7 +14,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 
 <select id="getVideos" parameterType="Chapter" resultMap="videoMap">
 
-	select * from video where id=#{chapterId}
+	select v.name as name, c.name as chapter_name from video v join chapter c on v.chapter_id=c.id where c.id=#{chapterId}
 
 </select>
    
