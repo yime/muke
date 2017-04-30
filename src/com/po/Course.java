@@ -9,7 +9,7 @@ public class Course {
 	private String courseName;
 	private int count;//选课人数
 	private String content;//内容介绍
-	private String category;
+	private int categoryId;
 	private Date date;
 	private List<Chapter> chapterList;
 	
@@ -43,12 +43,6 @@ public class Course {
 	public void setContent(String content) {
 		this.content = content;
 	}
-	public String getCategory() {
-		return category;
-	}
-	public void setCategory(String category) {
-		this.category = category;
-	}
 	public Date getDate() {
 		return date;
 	}
@@ -60,6 +54,12 @@ public class Course {
 	}
 	public void setChapterList(List<Chapter> chapterList) {
 		this.chapterList = chapterList;
+	}
+	public int getCategoryId() {
+		return categoryId;
+	}
+	public void setCategoryId(int categoryId) {
+		this.categoryId = categoryId;
 	}
 	
 

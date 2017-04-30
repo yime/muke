@@ -51,9 +51,9 @@ public class CourseController {
 	}
 	
 	@RequestMapping("/getCoursesByCategory.do")
-	public @ResponseBody List<Course> getCoursesByCategory(String category){
+	public @ResponseBody List<Course> getCoursesByCategory(int categoryId){
 		Course c = new Course();
-		c.setCategory(category);
+		c.setCategoryId(categoryId);
 		return cMapper.getCoursesByCategory(c);
 		
 	}
