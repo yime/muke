@@ -6,10 +6,10 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 <mapper namespace="com.mapper.CourseMapper">
 
 <resultMap type="Course" id="courseMap">
-	<result property="id" column="id"/>
-	<result property="teacherName" column="teacherName"/>
+	<id property="id" column="id"/>
+	<result property="teacherName" column="teacher_name"/>
 	<result property="content" column="content"/>
-	<result property="courseName" column="courseName"/>
+	<result property="courseName" column="course_name"/>
 	<result property="date" column="date"/>
 </resultMap>
 

@@ -6,9 +6,10 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 <mapper namespace="com.mapper.VideoMapper">
 
 <resultMap type="Video" id="videoMap">
-	<result property="id" column="id"/>
+	<id property="id" column="id"/>
 	<result property="name" column="name"/>
-	<result property="chapterId" column="chapterId"/>
+	<result property="chapterId" column="chapter_id"/>
+
 </resultMap>
 
 <select id="getVideos" parameterType="Chapter" resultMap="videoMap">

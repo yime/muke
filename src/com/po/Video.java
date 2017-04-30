@@ -4,6 +4,7 @@ public class Video {
 	private String name;
 	private int id;
 	private int chapterId;
+	private String addr;
 	
 
 	public String getName() {
@@ -23,6 +24,12 @@ public class Video {
 	}
 	public void setChapterId(int chapterId) {
 		this.chapterId = chapterId;
+	}
+	public String getAddr() {
+		return addr;
+	}
+	public void setAddr(String addr) {
+		this.addr = addr;
 	}
 	
 

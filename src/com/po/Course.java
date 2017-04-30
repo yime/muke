@@ -1,6 +1,7 @@
 package com.po;
 
 import java.util.Date;
+import java.util.List;
 
 public class Course {
 	private int id;
@@ -10,6 +11,7 @@ public class Course {
 	private String content;//ÄÚÈİ½éÉÜ
 	private String category;
 	private Date date;
+	private List<Chapter> chapterList;
 	
 	public int getId() {
 		return id;
@@ -52,6 +54,12 @@ public class Course {
 	}
 	public void setDate(Date date) {
 		this.date = date;
+	}
+	public List<Chapter> getChapterList() {
+		return chapterList;
+	}
+	public void setChapterList(List<Chapter> chapterList) {
+		this.chapterList = chapterList;
 	}
 	
 

@@ -7,9 +7,15 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 <mapper namespace="com.mapper.ChapterMapper">
 
 	<resultMap type="Chapter" id="chapterMap">
-		<result property="id" column="id"/>
+		<id property="id" column="id"/>
 		<result property="name" column="name"/>
-		<result property="courseId" column="courseId"/>
+		<result property="courseId" column="course_id"/>
+		<collection property="videoList" column="chapter_video_id" ofType="Video">
+			<id property="id" column="videoId"/>
+			<result property="name" column="video_name"/>
+		</collection>
+			
+		
 	</resultMap>
 	
 	<select id="getChapters" parameterType="Course" resultType="chapterMap">
