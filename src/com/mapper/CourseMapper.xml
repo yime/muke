@@ -11,10 +11,10 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	<result property="content" column="content"/>
 	<result property="courseName" column="course_name"/>
 	<result property="date" column="date"/>
-	<collection property="categoryList" column="id" ofType="com.po.Category">
+	<!--  <collection property="categoryList" column="id" ofType="com.po.Category">
 		<id property="id" column="category_id"/>
 		<result property="name" column="category_name"/>
-	</collection>
+	</collection>-->
 </resultMap>
 
   <insert id="addCourse" parameterType="Course">
