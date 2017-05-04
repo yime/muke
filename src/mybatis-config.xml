@@ -5,6 +5,11 @@ PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
 <configuration>
      <typeAliases>
        
+       
+       <typeAlias type="com.po.ATestUser" alias="ATestUser"/>
+ 
+       
+       
      </typeAliases>
 
      <mappers>
