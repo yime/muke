@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.mapper.CourseMapper">
+
+<resultMap type="Course" id="courseMap">
+	<id property="id" column="id"/>
+	<result property="teacherName" column="teacher_name"/>
+	<result property="content" column="content"/>
+	<result property="courseName" column="course_name"/>
+	<result property="date" column="date"/>
+	<!--  <collection property="categoryList" column="id" ofType="com.po.Category">
+		<id property="id" column="category_id"/>
+		<result property="name" column="category_name"/>
+	</collection>-->
+</resultMap>
+
+  <insert id="addCourse" parameterType="Course">
+      insert into course(teacher_name,content,course_name,date) values(#{teacherName},#{content},#{courseName},now())
+  
+  </insert>
+  
+  <delete id="deleteCourse" parameterType="int">
+  		delete from course where id=#{i}
+  
+  </delete>
+  
+  <select id="getCoursesByName" parameterType="Course" resultMap="courseMap">
+  		select * from course where name like '%${courseName}%'
+  </select>
+  
+  <select id="getCoursesByCategory" parameterType="Course" resultMap="courseMap">
+  		select * from course where category=#{category}
+  </select>
+  
+  <select id="getCoursesByTeacher" parameterType="Course" resultMap="courseMap">
+  		select * from course where teacherName=#{teacherName}
+  </select>
+  
+  <select id="getCoursesByID" parameterType="int" resultMap="courseMap">
+  		select * from course where id=#{id}
+  </select>
+  
+  <select id="getCount" parameterType="Course" resultType="int">
+  		select count from course id=#{i}
+  		
+  </select>
+
+</mapper>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="com.mapper.ChapterMapper">
+
+	<resultMap type="Chapter" id="chapterMap">
+		<id property="id" column="id"/>
+		<result property="name" column="name"/>
+		<result property="courseId" column="course_id"/>
+		<!--  <collection property="videoList" column="id" ofType="com.po.Video">
+			<id property="id" column="video_id"/>
+			<result property="name" column="video_name"/>
+		</collection> -->
+			
+		
+	</resultMap>
+	
+	<select id="getChapters" parameterType="Course" resultType="chapterMap">
+	
+	select ch.id as id, ch.name as name, co.course_name as course_name
+	 from chapter ch join course co on ch.course_id=co.id where co.id=#{courseId}
+	
+	</select>
+	
+	
+	
+</mapper>
