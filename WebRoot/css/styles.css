@@ -4,7 +4,6 @@
 }
 
 .main-col{
-
 	float:left;
 	width:700px;
 	
@@ -12,13 +11,18 @@
 
 .right-col {
 	float:right;
-
-	
 	width:200px;
 	
 }
 
 
+	
+
+
+.right-col {
+	float:left;
+	width:200px;
+}
 
 .tab {
 	height:50px;
