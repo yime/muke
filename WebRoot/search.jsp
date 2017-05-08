@@ -1,8 +1,21 @@
+<%@ page language="java" import="java.util.*" pageEncoding="ISO-8859-1"%>
+<%
+String path = request.getContextPath();
+String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+%>
+
 <!DOCTYPE html>
 <html>
   <head>
-  	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>课程介绍</title>
+    <base href="<%=basePath%>">
+
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="expires" content="0">    
+	<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+	<meta http-equiv="description" content="This is my page">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>搜索结果</title>
     <link rel="stylesheet" href="../css/bootstrap.css" type="text/css" />
     <link rel="stylesheet" href="../css/styles.css" type="text/css" />
     <link rel="stylesheet" href="../css/jqueri-ui.css" type="text/css" />
@@ -18,20 +31,10 @@
     <script type="text/javascript" src="../js/jquery.cookie.js"></script>
     <script type="text/javascript" src="../uEditor/uEditor.js"></script>
     <script type="text/javascript" src="./assets/hivideo.js"></script>
-    
-	
-    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3"/>
-    <meta http-equiv="description" content="this is my page"/>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
-    
- 
+
   </head>
   
   <body>
-  	<a href="/index.htm">
-		<img src="/images/logo.png" width="600" height="70"></img>
-	</a>
-  
     <div class="navbar navbar-default">
     	<div class="container-fluid">
     		<div class="navbar-header">
@@ -41,7 +44,7 @@
     	
     	<div>
     		<ul class="nav navbar-nav">
-    			<li><a href="/index.html">首页</a></li>
+    			<li><a href="../index.html">首页</a></li>
     			<li class="dropdown">
     				<a href="#" class="dropdown-toggle" data-toggle="dropdown">
     					编程技术
@@ -49,11 +52,11 @@
     				</a>
     				<ul class="dropdown-menu">
     					<li>
-    						<a href="#" target="_blank">
+    						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
     							HTML/CSS
     							<b class="caret"></b>
     						</a>
-    						<ul style="left: 132px; visibility: hidden;">
+    						<ul class="dropdown-menu">
     							<li><a href="#">HTML</a></li>
     							<li><a href="#">CSS</a></li>
     							<li><a href="#">HTML5</a></li>
@@ -81,16 +84,13 @@
     	</div>
     	
     	<div>
-       	 	<form class="navbar-form navbar-left" action="" data-role="search">
+       	 	<form class="navbar-form navbar-left" data-role="search">
             	<div class="form-group">
-            		
-                	<input type="text" class="form-control" placeholder="search..."/>
-            		
+                	<input type="text" class="form-control" value="search..."/>
             	</div>
             	<button type="submit" class="btn btn-default" id="search_button">搜索</button>
-            	
+            	<button type="submit" class="btn btn-default" id="message_button">消息</button>
         	</form>
-        	<a href="#"><button type="submit" class="btn btn-default" id="message_button">消息</button></a>
     	</div>
     	
     	</div>
@@ -98,49 +98,9 @@
     	
     </div>
     
-    <div class="container main">
-    	<div class="row">
-    		<div class="col left-col">
-    			<ul class="nav nav-pills nav-stacked">
-    				<li data-role="presentation"><a href="#">公告</a></li>
-    				<li data-role="presentation"><a href="#">教学进度</a></li>
-    				<li data-role="presentation"><a href="#">讨论</a></li>
-    				<li data-role="presentation"><a href="#">课件、测验</a></li>
-    			</ul>
-    			
-    		</div>
-    		
-
-
-    		<div class="col main-col">
-    		
-    			
-    		
-    			<ol class="breadcrumb">
-    				<li><a href="#">概率论与数理统计</a></li>
-    				<li><a href="#">第1章：XXX</a></li>
-    				<li class="active">第一节：XXX</li>
-				</ol>
-    		
-    			<video ishivideo="true" autoplay="autoplay" isrotate="false" autoHide="true">
-    				<source src="http://www.html5videoplayer.net/videos/madagascar3.mp4" type="video/mp4"> </source>
-				</video>
-    		
-    			
-    			
-    			
-    		</div>
-    		
-
-    	
-    	</div>
-    
-    
-    </div>
-    
-    
-    
-    
-</body>
-
+     <div class="container main">
+     	
+     	
+     </div>
+  </body>
 </html>
