@@ -67,7 +67,7 @@ video[ishivideo="true"]::media-controls{
 .hi-video-controlbar{
     background: rgba(0, 0, 0, 0.75);
     color: #fff;
-    min-height: 40px;
+    min-height: 20px;
     width: 100%;
     position: absolute;
     left: 0;
@@ -86,7 +86,7 @@ video[ishivideo="true"]::media-controls{
     vertical-align: middle;
 }
 
-.hi-video-controlbar input:active, .hi-video-controlbar input:hover, .hi-video-controlbar input:focus
+.hi-video-controlbar input:active, .hi-video-controlbar input:hover, .hi-video-controlbar input:focus,
 .hi-video-controlbar button:active, .hi-video-controlbar button:hover, .hi-video-controlbar button:focus{
     border: none;
     outline: none;

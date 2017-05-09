@@ -91,7 +91,7 @@
         },
         config: function(){
             var self = this;
-            self.options = self.options || {};
+            //self.options = self.options || {};
             var boolConvert = function(value){
                 return value && value.toLowerCase() == "true";
             };
@@ -233,7 +233,7 @@
                     self.videoParent.style.height = origHeight + "px";
                     self.videoParent.style.width = origWidth + "px";
                 }
-            })
+            });
         });
 
         self.fullBtn && self.fullBtn.addEventListener("click", function(){
@@ -392,7 +392,7 @@
         });
 
         return self;
-    }
+    };
     /**
      * 判断是否正在全屏播放
      * @returns {*}

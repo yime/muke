@@ -10,8 +10,35 @@
 }
 
 
-.tab {
-	height:50px;
-	width:150px;
-	padding-left:25px;
+.left{
+	float:left;
+
+	
+}
+
+.left a{
+	display: block;
+	width: 200px;
+	height: 100px;
+	margin: auto auto;
+	font-family:"Î¢ÈíÑÅºÚ";
+	font-size: 15px;
+	background-color: #bebebe;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 4px;
+    text-decoration: none;
+    text-alignment: center;
+    
+	
+	
+}
+
+.left a:link, .left a:visited{
+	
+
+}
+
+.left a:hover, .left a:active{
+    background-color: #0000cc;
 }
