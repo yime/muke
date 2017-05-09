@@ -17,7 +17,18 @@
     <script type="text/javascript" src="../js/jquery.form.js"></script>
     <script type="text/javascript" src="../js/jquery.cookie.js"></script>
     <script type="text/javascript" src="../uEditor/uEditor.js"></script>
-    <script type="text/javascript" src="./assets/hivideo.js"></script>
+    <script type="text/javascript" src="./hivideo.js"></script>
+    <style type="text/css">
+        .main-wrap{
+            margin: 100 100;
+            min-width: 320px;
+            max-width: 640px;
+        }
+
+        .main-wrap video{
+            width: 100%;
+        }
+    </style>
     
 	
     <meta http-equiv="keywords" content="keyword1,keyword2,keyword3"/>
@@ -77,6 +88,7 @@
     				</ul>
     			</li>
     			<li><a href="#">语言学习</a></li>
+    			<li><a href="#">消息</a><li>
     		</ul>
     	</div>
     	
@@ -90,7 +102,7 @@
             	<button type="submit" class="btn btn-default" id="search_button">搜索</button>
             	
         	</form>
-        	<a href="#"><button type="submit" class="btn btn-default" id="message_button">消息</button></a>
+        	
     	</div>
     	
     	</div>
@@ -117,13 +129,13 @@
     			
     		
     			<ol class="breadcrumb">
-    				<li><a href="#">概率论与数理统计</a></li>
-    				<li><a href="#">第1章：XXX</a></li>
+    				<li><a href="#">课程名称：概率论与数理统计</a></li>
+    				<li>第1章：XXX</li>
     				<li class="active">第一节：XXX</li>
 				</ol>
+				
     		<div class="main-wrap">
-    			<video ishivideo="true" autoplay="autoplay" isrotate="false" autoHide="true">
-    			
+    			<video ishivideo="true" autoplay="true" isrotate="false" autoHide="true">
     				<source src="http://www.html5videoplayer.net/videos/madagascar3.mp4" type="video/mp4"> </source>
 				</video>
     		</div>

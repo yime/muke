@@ -29,7 +29,7 @@
          * @param ele
          */
         init: function(ele){
-            this.volume_ = 0
+            this.volume_ = 0;
             this.videoId_ = "hivideo" + new Date().getTime();
             //播放器容器
             var videoWrapper = document.createElement("div");
@@ -107,7 +107,7 @@
                 self.playBtn.click();
             }
         }
-    }
+    };
 
     /**
      * 对象扩展函数
@@ -120,7 +120,7 @@
                 self[prop] = obj[prop];
             }
         }
-    }
+    };
 
     hivideo.extend({
         /**
@@ -346,7 +346,7 @@
         });
 
         return self;
-    }
+    };
     /**
      * 绑定时间变化事件
      * @returns {hivideo}
