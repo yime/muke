@@ -12,6 +12,7 @@
 
 .left{
 	float:left;
+	margin-bottom: 2px;
 
 	
 }
@@ -20,25 +21,21 @@
 	display: block;
 	width: 200px;
 	height: 100px;
-	margin: auto auto;
 	font-family:"Î¢ÈíÑÅºÚ";
 	font-size: 15px;
-	background-color: #bebebe;
-    color: #ffffff;
+	background-color: #333;
+    color: #000;
     font-weight: bold;
-    padding: 4px;
     text-decoration: none;
     text-alignment: center;
-    
+    display: block;
+    line-height: 40px;
+    padding-left: 10px;
 	
 	
 }
 
-.left a:link, .left a:visited{
-	
 
-}
-
-.left a:hover, .left a:active{
-    background-color: #0000cc;
+.left a:hover{
+    color: #008080;
 }
