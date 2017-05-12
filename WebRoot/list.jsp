@@ -117,6 +117,40 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
         	
     	</div>
     	
+    	<div class="container main">
+    	<div class="row">
+    		<div class="col left-col">
+    			<ul class="nav nav-stacked">
+    				<li data-role="presentation" class="left"><a href="#">公告</a></li>
+    				<li data-role="presentation" class="left"><a href="#">教学计划</a></li>
+    				<li data-role="presentation" class="left"><a href="#">讨论</a></li>
+    				<li data-role="presentation" class="left chosen"><a href="#">课件、测验</a></li>
+    			</ul>
+    			
+    		</div>
+    		
+
+
+    		<div class="col main-col">
+    			<div class="header">
+    				<h2>概率论与数理统计</h2>
+    			
+    			</div>
+    		
+    			
+    			
+    			
+    		</div>
+    		
+
+    	
+    	</div>
+    
+    
+    </div>
+    
+    
+    	
     	</div>
     	
     	

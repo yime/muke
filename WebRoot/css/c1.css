@@ -24,7 +24,7 @@
 	width: 200px;
 	height: 100px;
 	font-family:"Î¢ÈíÑÅºÚ";
-	font-size: 15px;
+	font-size: 16px;
 	background-color: #eee;
     color: #000;
     text-decoration: none;
@@ -32,14 +32,26 @@
     display: block;
     line-height: 40px;
     padding-left: 10px;
+    border: 1px;
 	
 	
 }
 
 
 .left a:hover{
-    color: #008080;
+    color: #008080;  
 }
 
+.left.chosen a {
+	background-color: #008080;
+	color: #eee;
+}
 
+.bc{
+	margin-left:30px;
+}
            
+           
+.header{
+	
+}
