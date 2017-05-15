@@ -132,8 +132,11 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 
 
     		<div class="col main-col">
-    			<div class="header">
-    				<h2>概率论与数理统计</h2>
+    			<div class="header bc">
+    			
+    				<h4><b>概率论与数理统计</b></h4>
+    				<h5>范红军、陈振宇</h5>
+    			
     			
     			</div>
     		
