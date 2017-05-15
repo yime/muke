@@ -1,4 +1,4 @@
-<%@ page language="java" import="java.util.*" import="java.sql.*" pageEncoding="ISO-8859-1"%>
+<%@ page language="java" import="java.util.*" import="java.sql.*" pageEncoding="UTF-8"%>
 <%
 String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
@@ -100,7 +100,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     				</ul>
     			</li>
     			<li><a href="#">语言学习</a></li>
-    			<li><a href="#">消息</a><li>
+    			
     		</ul>
     	</div>
     	
@@ -116,6 +116,16 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
         	</form>
         	
     	</div>
+    	
+    	<div>
+    		<ul class="nav navbar-nav" data-role="navigation">
+    			<li><a href="#">个人主页</a></li>
+    			<li><a href="message.jsp">消息</a></li>
+    		
+    		
+    		</ul>
+
+		</div>
     	
     	<div class="container main">
     	<div class="row">
@@ -133,12 +143,19 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 
     		<div class="col main-col">
     			<div class="header bc">
-    			
-    				<h4><b>概率论与数理统计</b></h4>
+    				<h4><a href="introduction.html"><b>概率论与数理统计</b></a></h4>
     				<h5>范红军、陈振宇</h5>
+    			</div>
     			
+    			<div>
+    				<h3>课件、测验</h3>
+    				
     			
     			</div>
+    			
+    			
+    			
+    			
     		
     			
     			
