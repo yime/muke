@@ -72,3 +72,20 @@
 .headImg img{
 	border-radius=15px;
 }
+
+.chapterMenu{
+	margin-bottom:5px;
+	margin-top:5px;
+	position:relative;
+}
+
+.titleTab{
+	padding: 10px 15px;
+	background-color:#eeeeee;
+	cursor: pointer;
+	
+}
+
+.titleTab:hover{
+	background-color:#00eeee;
+}
