@@ -29,6 +29,18 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     	<script type="text/javascript" src="js/jquery.cookie.js"></script>
     	<script type="text/javascript" src="js/nav.js"></script>
     	<script type="text/javascript" src="uEditor/uEditor.js"></script>
+    	<script type="text/javascript">
+    		$(function(){
+    			$.get("getChapters.do",function(data){
+    				$.each(data,function(i,value){
+    				$div = $("<div class="titleTab"><span class="caret"></span><h3 class="title">"+"第"+value.id+"章："+value.name+"</h3></div>");
+    				$("#tb").append($div);
+    				});
+    			});
+    		
+    		});
+    	
+    	</script>
 		
 		
 		
@@ -157,7 +169,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     			<div class="chapterMenu">
     				<div class="titleTab">
     					<span class="caret"></span>
-    					<h3 class="title"></h3>
+    					<h3 class="title tb"></h3>
     				
     				</div>
     			
