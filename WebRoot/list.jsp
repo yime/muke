@@ -156,7 +156,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     			
     			<div class="chapterMenu">
     				<div class="titleTab">
-    					
+    					<span class="caret"></span>
+    					<h3 class="title"></h3>
     				
     				</div>
     			
