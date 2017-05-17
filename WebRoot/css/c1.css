@@ -32,7 +32,7 @@
     display: block;
     line-height: 40px;
     padding-left: 10px;
-    border: 1px;
+    border: 1px #999;
 	
 	
 }
@@ -73,6 +73,10 @@
 	border-radius=15px;
 }
 
+.caret{
+	border-width:8px;
+}
+
 .chapterMenu{
 	margin-bottom:5px;
 	margin-top:5px;
@@ -88,4 +92,10 @@
 
 .titleTab:hover{
 	background-color:#00eeee;
+}
+
+.subTab{
+	padding:20px 15px 30px 30px;
+	cursor:pointer;
+	
 }
