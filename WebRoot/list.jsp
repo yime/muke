@@ -33,17 +33,31 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     		$(function(){
     			$.get("getChapters.do",function(data){
     				$.each(data,function(i,value){
-    				$div = $("<div class='titleTab'><span class='caret'></span>\
+    				$div = $("<div class='titleTab tt'><span class='caret'></span>\
     						<h3 class='title'>"+"第"+value.id+"章："+value.name+"</h3></div>");
     					
     					
     				
     				
-    				$("#tb").append($div+'\n');
+    				$("#cm").append($div+'\n');
     				});
     			});
     		
     		});
+    		
+    		$(function(){
+    			$.get("getSubchapters.do",function(data){
+    				$.each(data,function(i,value){
+    					$div = $("<div class='subTab'>\
+        						<h4 class='title'>"+"第"+value.id+"节："+value.name+"</h4></div>");
+        					
+        					
+        				
+        				
+        				$("#tt").append($div+'\n');
+    				})
+    			})
+    		})
     	
     	</script>
 		
@@ -165,22 +179,21 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     			</div>
     			
     			<div>
-    				<h2>课件、测验</h3>
+    				<h2>课件、测验</h2>
     				
     			
     			</div>
     			
     			
-    			<div class="chapterMenu">
+    			<div class="chapterMenu cm">
     				<div class="titleTab">
     					<span class="caret"></span>
-    					<h3 class="title tb"></h3>
+    					<h3 class="title"></h3>
     				
     				</div>
     				
     				<div class="subTab">
-    					<span class="cs"></span>
-    					<h4 class="title tb"></h4>
+    					<h4 class="title"></h4>
     				
     				</div>
     			
