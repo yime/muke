@@ -34,7 +34,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     			$.get("getChapters.do",function(data){
     				$.each(data,function(i,value){
     				$div = $("<div class="titleTab"><span class="caret"></span><h3 class="title">"+"第"+value.id+"章："+value.name+"</h3></div>");
-    				$("#tb").append($div);
+    				$("#tb").append($div+'\n');
     				});
     			});
     		

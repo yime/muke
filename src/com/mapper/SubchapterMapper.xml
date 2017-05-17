@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.mapper.SubchapterMapper">
+	<resultMap type="Subchapter" id="subchapterMap">
+		<id property="id" column="id"/>
+		<result property="name" column="name"/>
+		<result property="chapterId" column="chapter_id"/>
+	</resultMap>
+	
+	<select id="getSubchapters" parameterType="Chapter" resultType="subchapterMap">
+	
+	select sc.id as id, sc.name as name, ch.name as chapter_name
+	 from chapter ch join subchapter sc on ch.id=sc.chapter_id where ch.id=#{chapterId}
+	
+	</select>
+	
+</mapper>

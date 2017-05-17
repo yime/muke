@@ -3,7 +3,7 @@ package com.po;
 public class Video {
 	private String name;
 	private int id;
-	private int chapterId;
+	private int subchapterId;
 	private String addr;
 	
 
@@ -19,17 +19,18 @@ public class Video {
 	public void setId(int id) {
 		this.id = id;
 	}
-	public int getChapterId() {
-		return chapterId;
-	}
-	public void setChapterId(int chapterId) {
-		this.chapterId = chapterId;
-	}
+
 	public String getAddr() {
 		return addr;
 	}
 	public void setAddr(String addr) {
 		this.addr = addr;
+	}
+	public int getSubchapterId() {
+		return subchapterId;
+	}
+	public void setSubchapterId(int subchapterId) {
+		this.subchapterId = subchapterId;
 	}
 	
 
