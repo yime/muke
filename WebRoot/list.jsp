@@ -55,9 +55,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
         				
         				
         				$("#tt").append($div+'\n');
-    				})
-    			})
-    		})
+    				});
+    			});
+    		});
     	
     	</script>
 		
