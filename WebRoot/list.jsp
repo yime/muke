@@ -45,7 +45,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     		
     		});
     		
-    		$(function(){
+    		$("#tt").click(function(){
     			$.get("getSubchapters.do",function(data){
     				$.each(data,function(i,value){
     					$div = $("<div class='subTab'>\
