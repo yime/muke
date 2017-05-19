@@ -7,6 +7,10 @@ PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
        
        
        <typeAlias type="com.po.ATestUser" alias="ATestUser"/>
+       <typeAlias type="com.po.Chapter" alias="Chapter"/>
+       <typeAlias type="com.po.Subchapter" alias="Subchapter"/>
+       <typeAlias type="com.po.Course" alias="Course"/>
+       <typeAlias type="com.po.Video" alias="Video"/>
  
        
        
