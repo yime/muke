@@ -17,7 +17,7 @@ PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
      </typeAliases>
 
      <mappers>
-       
+       <package name="com.mapper"/>
      </mappers>
     
 </configuration>
