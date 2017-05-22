@@ -45,7 +45,14 @@ public class CourseController {
 	@RequestMapping("/getCoursesByName.do")
 	public @ResponseBody List<Course> getCoursesByName(String name){
 		Course c = new Course();
-		c.setCourseName(name);
+		c.setTeacherName(name);
+		return cMapper.getCoursesByName(c);
+		
+	}
+	@RequestMapping("/getCoursesByTeacher.do")
+	public @ResponseBody List<Course> getCoursesByTeacher(String name){
+		Course c = new Course();
+		c.setTeacherName(name);
 		return cMapper.getCoursesByName(c);
 		
 	}

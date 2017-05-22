@@ -36,12 +36,9 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   </select>
   
   <select id="getCoursesByTeacher" parameterType="Course" resultMap="courseMap">
-  		select * from course where teacherName=#{teacherName}
+  		select * from course where teacherName like '%${teacherName}%'
   </select>
-  
-  <select id="getCoursesByID" parameterType="int" resultMap="courseMap">
-  		select * from course where id=#{id}
-  </select>
+
   
   <select id="getCount" parameterType="Course" resultType="int">
   		select count from course id=#{i}
