@@ -12,8 +12,8 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	
 	<select id="getSections" parameterType="Chapter" resultType="sectionMap">
 	
-	select sec.id as id, sec.name as name, ch.name as chapter_name
-	 from chapter ch join section sec on ch.id=sec.chapter_id where ch.id=#{chapterId}
+	select sc.id as id, sc.name as name, ch.name as chapter_name
+	 from chapter ch join section sc on ch.id=sc.chapter_id where ch.id=#{chapterId}
 	
 	</select>
 	

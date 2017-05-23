@@ -8,6 +8,6 @@ import com.po.Video;
 
 public interface VideoMapper {
 	public List<Video> getVideos();
-	public List<Video> getVideosBySubchapter(Section sc);
+	public List<Video> getVideosBySection(Section sc);
 
 }

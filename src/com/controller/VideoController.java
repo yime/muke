@@ -27,7 +27,7 @@ public class VideoController {
 	public @ResponseBody List<Video> getVideosBySubchapter(int id){
 		Section sc = new Section();
 		sc.setId(id);
-		return vMapper.getVideosBySubchapter(sc);
+		return vMapper.getVideosBySection(sc);
 		
 	}
 
