@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.mapper.VideoMapper;
 import com.po.Chapter;
-import com.po.Subchapter;
+import com.po.Section;
 import com.po.Video;
 
 @Controller
@@ -25,7 +25,7 @@ public class VideoController {
 	
 	@RequestMapping("/getVideosBySubChapter.do")
 	public @ResponseBody List<Video> getVideosBySubchapter(int id){
-		Subchapter sc = new Subchapter();
+		Section sc = new Section();
 		sc.setId(id);
 		return vMapper.getVideosBySubchapter(sc);
 		

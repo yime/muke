@@ -5,10 +5,10 @@ import java.util.List;
 
 import com.po.Chapter;
 import com.po.Course;
-import com.po.Subchapter;
+import com.po.Section;
 
 
 public interface SectionMapper {
-	public List<Subchapter> getSubchapters(Chapter c);
+	public List<Section> getSections(Chapter c);
 
 }

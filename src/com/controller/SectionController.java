@@ -10,16 +10,16 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.mapper.SectionMapper;
 import com.po.Chapter;
-import com.po.Subchapter;
+import com.po.Section;
 
 @Controller
 public class SectionController {
-	@Resource(name="subchapterMapper")
+	@Resource(name="sectionMapper")
 	SectionMapper sMapper;
 	
-	@RequestMapping("/getSubchapters.do")
-	public @ResponseBody List<Subchapter> getSubchapters(Chapter c){
-		return sMapper.getSubchapters(c);
+	@RequestMapping("/getSection.do")
+	public @ResponseBody List<Section> getSections(Chapter c){
+		return sMapper.getSections(c);
 	}
 	
 
