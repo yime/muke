@@ -24,7 +24,7 @@ public class VideoController {
 	}
 	
 	@RequestMapping("/getVideosBySubChapter.do")
-	public @ResponseBody List<Video> getVideosBySubchapter(int id){
+	public @ResponseBody List<Video> getVideosBySection(int id){
 		Section sc = new Section();
 		sc.setId(id);
 		return vMapper.getVideosBySection(sc);
