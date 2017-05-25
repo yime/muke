@@ -1,3 +1,9 @@
+<%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
+<%
+String path = request.getContextPath();
+String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+%>
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -48,21 +54,21 @@
     <div class="navbar navbar-default">
     	<div class="container-fluid">
     		<div class="navbar-header">
-    			<a class="navbar-brand" href="#">æè¯¾ç½</a>
+    			<a class="navbar-brand" href="#">慕课网</a>
     		</div>
 
     	
     	<div>
     		<ul class="nav navbar-nav" id="nav1">
-    			<li><a href="../index.html">é¦é¡µ</a></li>
+    			<li><a href="../index.html">首页</a></li>
     			<li class="dropdown subNav">
     				<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-    					ç¼ç¨ææ¯
+    					编程技术
     					<b class="caret"></b>
     				</a>
     				<ul class="dropdown-menu multi-level">
     					<li class="dropdown-submenu">
-    						<a tabindex="-1" href="#">åç«¯å¼å</a>
+    						<a tabindex="-1" href="#">前端开发</a>
     						<ul class="dropdown-menu">
     							<li><a href="#">HTML</a></li>
     							<li><a href="#">CSS</a></li>
@@ -71,7 +77,7 @@
     						</ul>
     					</li>
     					<li class="dropdown-submenu">
-    						<a tabindex="-1" href="#">æå¡ç«¯</a>
+    						<a tabindex="-1" href="#">服务端</a>
     						<ul class="dropdown-menu">
     							<li><a href="#">HTML</a></li>
     							<li><a href="#">CSS</a></li>
@@ -81,7 +87,7 @@
     					</li>
     					
     					<li class="dropdown-submenu">
-    						<a tabindex="-1" href="#">ç§»å¨ç«¯</a>
+    						<a tabindex="-1" href="#">移动端</a>
     						<ul class="dropdown-menu">
     							<li><a href="#">HTML</a></li>
     							<li><a href="#">CSS</a></li>
@@ -90,21 +96,21 @@
     						</ul>
     					</li>
     					
-    					<li><a href="#">æµè§å¨èæ¬</a></li>
+    					<li><a href="#">浏览器脚本</a></li>
     				</ul>
     			</li>
     			<li class="dropdown subNav">
     				<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-    					å·¥å·è½¯ä»¶
+    					工具软件
     					<b class="caret"></b>
     				</a>
     				<ul class="dropdown-menu">
-    					<li><a href="#">åå¬è½¯ä»¶</a></li>
-    					<li><a href="#">è®¾è®¡</a></li>
-    					<li><a href="#">å¶ä»</a></li>
+    					<li><a href="#">办公软件</a></li>
+    					<li><a href="#">设计</a></li>
+    					<li><a href="#">其他</a></li>
     				</ul>
     			</li>
-    			<li><a href="#">è¯­è¨å­¦ä¹ </a></li>
+    			<li><a href="#">语言学习</a></li>
     			
     		</ul>
     	</div>
@@ -124,8 +130,8 @@
     	
     	<div>
     		<ul class="nav navbar-nav" data-role="navigation">
-    			<li><a href="#">ä¸ªäººä¸»é¡µ</a></li>
-    			<li><a href="message.jsp">æ¶æ¯</a></li>
+    			<li><a href="#">个人主页</a></li>
+    			<li><a href="message.jsp">消息</a></li>
     			<li class="headImg">
     				<img></img>
     			</li>
@@ -144,10 +150,10 @@
     	<div class="row">
     		<div class="col left-col">
     			<ul class="nav nav-stacked">
-    				<li data-role="presentation" class="left"><a href="#">å¬å</a></li>
-    				<li data-role="presentation" class="left"><a href="#">æå­¦è®¡å</a></li>
-    				<li data-role="presentation" class="left"><a href="#">è®¨è®º</a></li>
-    				<li data-role="presentation" class="left"><a href="#">è¯¾ä»¶ãæµéª</a></li>
+    				<li data-role="presentation" class="left"><a href="#">公告</a></li>
+    				<li data-role="presentation" class="left"><a href="#">教学计划</a></li>
+    				<li data-role="presentation" class="left"><a href="#">讨论</a></li>
+    				<li data-role="presentation" class="left"><a href="#">课件</a></li>
     			</ul>
     			
     		</div>
@@ -159,9 +165,9 @@
     			
     		
     			<ol class="breadcrumb bc">
-    				<li><a href="#">è¯¾ç¨åç§°ï¼æ¦çè®ºä¸æ°çç»è®¡</a></li>
-    				<li>ç¬¬1ç« ï¼XXX</li>
-    				<li class="active">ç¬¬ä¸èï¼XXX</li>
+    				<li><a href="#">概率论与数理统计</a></li>
+    				<li>第一章：XXX</li>
+    				<li class="active">第一节：XXX</li>
 				</ol>
 				
     		<div class="main-wrap">

@@ -1,3 +1,9 @@
+<%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
+<%
+String path = request.getContextPath();
+String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+%>
+
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
@@ -130,7 +136,7 @@
     				<li data-role="presentation" class="left chosen"><a href="#">公告</a></li>
     				<li data-role="presentation" class="left"><a href="#">教学计划</a></li>
     				<li data-role="presentation" class="left"><a href="#">讨论</a></li>
-    				<li data-role="presentation" class="left"><a href="#">课件、测验</a></li>
+    				<li data-role="presentation" class="left"><a href="#">课件</a></li>
     			</ul>
     			
     		</div>
