@@ -3,7 +3,7 @@
   <head>
   	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>课程介绍</title>
+    <title>视频播放</title>
     <link rel="stylesheet" href="../css/bootstrap.css" type="text/css" />
     <link rel="stylesheet" href="../css/c1.css" type="text/css" />
     <link rel="stylesheet" href="../css/submenu.css" type="text/css" />
@@ -48,21 +48,21 @@
     <div class="navbar navbar-default">
     	<div class="container-fluid">
     		<div class="navbar-header">
-    			<a class="navbar-brand" href="#">慕课网</a>
+    			<a class="navbar-brand" href="#">æè¯¾ç½</a>
     		</div>
 
     	
     	<div>
     		<ul class="nav navbar-nav" id="nav1">
-    			<li><a href="../index.html">首页</a></li>
+    			<li><a href="../index.html">é¦é¡µ</a></li>
     			<li class="dropdown subNav">
     				<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-    					编程技术
+    					ç¼ç¨ææ¯
     					<b class="caret"></b>
     				</a>
     				<ul class="dropdown-menu multi-level">
     					<li class="dropdown-submenu">
-    						<a tabindex="-1" href="#">前端开发</a>
+    						<a tabindex="-1" href="#">åç«¯å¼å</a>
     						<ul class="dropdown-menu">
     							<li><a href="#">HTML</a></li>
     							<li><a href="#">CSS</a></li>
@@ -71,7 +71,7 @@
     						</ul>
     					</li>
     					<li class="dropdown-submenu">
-    						<a tabindex="-1" href="#">服务端</a>
+    						<a tabindex="-1" href="#">æå¡ç«¯</a>
     						<ul class="dropdown-menu">
     							<li><a href="#">HTML</a></li>
     							<li><a href="#">CSS</a></li>
@@ -81,7 +81,7 @@
     					</li>
     					
     					<li class="dropdown-submenu">
-    						<a tabindex="-1" href="#">移动端</a>
+    						<a tabindex="-1" href="#">ç§»å¨ç«¯</a>
     						<ul class="dropdown-menu">
     							<li><a href="#">HTML</a></li>
     							<li><a href="#">CSS</a></li>
@@ -90,21 +90,21 @@
     						</ul>
     					</li>
     					
-    					<li><a href="#">浏览器脚本</a></li>
+    					<li><a href="#">æµè§å¨èæ¬</a></li>
     				</ul>
     			</li>
     			<li class="dropdown subNav">
     				<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-    					工具软件
+    					å·¥å·è½¯ä»¶
     					<b class="caret"></b>
     				</a>
     				<ul class="dropdown-menu">
-    					<li><a href="#">办公软件</a></li>
-    					<li><a href="#">设计</a></li>
-    					<li><a href="#">其他</a></li>
+    					<li><a href="#">åå¬è½¯ä»¶</a></li>
+    					<li><a href="#">è®¾è®¡</a></li>
+    					<li><a href="#">å¶ä»</a></li>
     				</ul>
     			</li>
-    			<li><a href="#">语言学习</a></li>
+    			<li><a href="#">è¯­è¨å­¦ä¹ </a></li>
     			
     		</ul>
     	</div>
@@ -116,7 +116,7 @@
                 	<input type="text" class="form-control" placeholder="search..."/>
             		
             	</div>
-            	<button type="submit" class="btn btn-default" id="search_button">搜索</button>
+            	<button type="submit" class="btn btn-default" id="search_button">æç´¢</button>
             	
         	</form>
         	
@@ -124,8 +124,8 @@
     	
     	<div>
     		<ul class="nav navbar-nav" data-role="navigation">
-    			<li><a href="#">个人主页</a></li>
-    			<li><a href="message.jsp">消息</a></li>
+    			<li><a href="#">ä¸ªäººä¸»é¡µ</a></li>
+    			<li><a href="message.jsp">æ¶æ¯</a></li>
     			<li class="headImg">
     				<img></img>
     			</li>
@@ -144,10 +144,10 @@
     	<div class="row">
     		<div class="col left-col">
     			<ul class="nav nav-stacked">
-    				<li data-role="presentation" class="left"><a href="#">公告</a></li>
-    				<li data-role="presentation" class="left"><a href="#">教学计划</a></li>
-    				<li data-role="presentation" class="left"><a href="#">讨论</a></li>
-    				<li data-role="presentation" class="left"><a href="#">课件、测验</a></li>
+    				<li data-role="presentation" class="left"><a href="#">å¬å</a></li>
+    				<li data-role="presentation" class="left"><a href="#">æå­¦è®¡å</a></li>
+    				<li data-role="presentation" class="left"><a href="#">è®¨è®º</a></li>
+    				<li data-role="presentation" class="left"><a href="#">è¯¾ä»¶ãæµéª</a></li>
     			</ul>
     			
     		</div>
@@ -159,9 +159,9 @@
     			
     		
     			<ol class="breadcrumb bc">
-    				<li><a href="#">课程名称：概率论与数理统计</a></li>
-    				<li>第1章：XXX</li>
-    				<li class="active">第一节：XXX</li>
+    				<li><a href="#">è¯¾ç¨åç§°ï¼æ¦çè®ºä¸æ°çç»è®¡</a></li>
+    				<li>ç¬¬1ç« ï¼XXX</li>
+    				<li class="active">ç¬¬ä¸èï¼XXX</li>
 				</ol>
 				
     		<div class="main-wrap">
