@@ -4,6 +4,7 @@ public class Section {
 	private int id;
 	private String name;
 	private int chapterId;
+	private String addr;//第一个视频的地址
 	public int getId() {
 		return id;
 	}
@@ -21,6 +22,12 @@ public class Section {
 	}
 	public void setChapterId(int chapterId) {
 		this.chapterId = chapterId;
+	}
+	public String getAddr() {
+		return addr;
+	}
+	public void setAddr(String addr) {
+		this.addr = addr;
 	}
 	
 }

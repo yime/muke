@@ -8,6 +8,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		<id property="id" column="id"/>
 		<result property="name" column="name"/>
 		<result property="chapterId" column="chapter_id"/>
+		<result property="addr" column="addr"/>
 	</resultMap>
 	
 	<select id="getSections" parameterType="Chapter" resultType="sectionMap">
