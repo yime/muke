@@ -7,6 +7,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <!DOCTYPE html>
 <html>
   <head>
+  	<base href="<%=basePath%>">
   	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>视频播放</title>

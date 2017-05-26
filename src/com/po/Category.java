@@ -5,6 +5,7 @@ import java.util.List;
 public class Category {
 	private int id;
 	private String name;
+	private String fatherName;
 
 	
 	public int getId() {
@@ -18,6 +19,12 @@ public class Category {
 	}
 	public void setName(String name) {
 		this.name = name;
+	}
+	public String getFatherName() {
+		return fatherName;
+	}
+	public void setFatherName(String fatherName) {
+		this.fatherName = fatherName;
 	}
 
 	

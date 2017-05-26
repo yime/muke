@@ -1,8 +1,9 @@
 package com.po;
 
+import java.io.Serializable;
 import java.sql.Date;
 
-public class Notice extends PageInfo{
+public class Notice extends PageInfo implements Serializable{
 	private int id;
 	private String title;
 	private String content;
