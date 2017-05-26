@@ -23,5 +23,9 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
    
    </select>
    
+   <insert id="addNotice" parameterType="Notice">
+   	insert into notice(title,content,post_time) values(#{title},#{content},now())
+   
+   </insert>
    
   </mapper>
