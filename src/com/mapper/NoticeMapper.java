@@ -9,7 +9,7 @@ public interface NoticeMapper {
 	public List<Notice> getAllNotices();
 	public List<Notice> getNoticesByPage(Notice n);
 	public int getTotal();
-	public Notice getContent(int nid);
+	public Notice getContent(int id);
 	public List<Notice> getNoticeByTitle(Notice n);
 	
 
