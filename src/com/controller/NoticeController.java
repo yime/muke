@@ -26,6 +26,7 @@ public class NoticeController {
 			e.printStackTrace();
 		}
 		List<Notice> list;
+
 		notice.setTotalRecords(noticeMapper.getTotal());
 		if(notice.getCurrentPage()==0){
 			notice.setCurrentPage(1);
@@ -33,5 +34,21 @@ public class NoticeController {
 		
 		list = noticeMapper.getNoticesByPage(notice);
 		return list;
+	}
+	
+	@RequestMapping("/addNotice.do")
+	public @ResponseBody String addNotice(Notice notice){
+
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		int i = noticeMapper.addNotice(notice);
+		
+		if(i>0) return "1";
+		return "0";
 	}
 }

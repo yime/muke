@@ -2,7 +2,7 @@ package com.po;
 
 public class PageInfo {
 	private int start;         //起始数
-	private int pageSize=3;    //每页条数
+	private int pageSize=4;    //每页条数
 	private int currentPage;   //当前页
 	private int totalPages;     //总页数
 	private int totalRecords;     //总记录数

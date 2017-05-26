@@ -5,7 +5,7 @@ import java.util.List;
 public class Category {
 	private int id;
 	private String name;
-	private String fatherName;
+	private String parentName;
 
 	
 	public int getId() {
@@ -20,11 +20,11 @@ public class Category {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public String getFatherName() {
-		return fatherName;
+	public String getParentName() {
+		return parentName;
 	}
-	public void setFatherName(String fatherName) {
-		this.fatherName = fatherName;
+	public void setParentName(String parentName) {
+		this.parentName = parentName;
 	}
 
 	

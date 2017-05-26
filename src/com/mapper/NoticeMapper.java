@@ -10,7 +10,8 @@ public interface NoticeMapper {
 	public List<Notice> getNoticesByPage(Notice n);
 	public int getTotal();
 	public Notice getContent(int id);
-	public List<Notice> getNoticeByTitle(Notice n);
+	public int addNotice(Notice notice);
+
 	
 
 }
