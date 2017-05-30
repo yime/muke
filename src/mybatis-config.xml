@@ -12,8 +12,7 @@ PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
        <typeAlias type="com.po.Course" alias="Course"/>
        <typeAlias type="com.po.Video" alias="Video"/>
        <typeAlias type="com.po.Notice" alias="Notice"/>
- 	   <typeAlias type="com.po.Category" alias="Category"/>
-       
+
        
      </typeAliases>
 

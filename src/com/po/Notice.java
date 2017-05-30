@@ -8,6 +8,7 @@ public class Notice extends PageInfo implements Serializable{
 	private String title;
 	private String content;
 	private Date postTime;
+	private int courseId;
 	public int getId() {
 		return id;
 	}
@@ -31,6 +32,20 @@ public class Notice extends PageInfo implements Serializable{
 	}
 	public void setPostTime(Date postTime) {
 		this.postTime = postTime;
+	}
+	
+	public String toString(){
+		return "Notice [id=" + id + ", title=" + title
+				+ ", content=" + content + ", postTime=" + postTime +
+				", getStart()=" + getStart() + ", getPageSize()="
+				+ getPageSize() + ", getCurrentPage()=" + getCurrentPage()
+				+ "]";
+	}
+	public int getCourseId() {
+		return courseId;
+	}
+	public void setCourseId(int courseId) {
+		this.courseId = courseId;
 	}
 
 }

@@ -1,14 +1,8 @@
-<%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
-<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<%@taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
-<%
-String path = request.getContextPath();
-String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
-%>  
+  
 <!DOCTYPE html>
 <html>
   <head>
-  	<base href="<%=basePath%>">
+  
   	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>视频播放</title>
@@ -44,23 +38,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <meta http-equiv="keywords" content="keyword1,keyword2,keyword3"/>
     <meta http-equiv="description" content="this is my page"/>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
-    <script type="text/javascript">
-        $(function(){
-        	
-        	
-        	
-        	if($.cookie("username")){
-        		var username=$.cookie("username");
-        		var pwd=$.cookie("pwd");
-        		window.location.href="userinfo/logincookie.do?username="+username+"&pwd="+pwd;
-        		
-        	}
-        	
-        });
-       
     
-    
-    </script>
  
   </head>
   
@@ -140,7 +118,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                 	<input type="text" class="form-control" placeholder="search..."/>
             		
             	</div>
-            	<button type="submit" class="btn btn-default" id="search_button">搜索</button>
+            	<button type="submit" class="btn btn-default" id="search_button">æç´¢</button>
             	
         	</form>
         	
@@ -190,7 +168,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				
     		<div class="main-wrap">
     			<video ishivideo="true" autoplay="true" isrotate="false" autoHide="true">
-    				<source src=$() type="video/mp4"> </source>
+    				<source src="http://www.html5videoplayer.net/videos/madagascar3.mp4" type="video/mp4"> </source>
 				</video>
     		</div>
     			

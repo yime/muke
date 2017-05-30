@@ -8,13 +8,13 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 <resultMap type="Video" id="videoMap">
 	<id property="id" column="id"/>
 	<result property="name" column="name"/>
-	<result property="subchapterId" column="subchapter_id"/>
+	<result property="sectionId" column="section_id"/>
 
 </resultMap>
 
-<select id="getVideos" parameterType="Subchapter" resultMap="videoMap">
+<select id="getVideos" parameterType="Section" resultMap="videoMap">
 
-	select v.name as name, c.name as subchapter_name from video v join subchapter sc on v.subchapter_id=sc.id where sc.id=#{subchapterId}
+	select v.name as name, c.name as section_name from video v join section sc on v.section_id=sc.id where sc.id=#{sectionId}
 
 </select>
    

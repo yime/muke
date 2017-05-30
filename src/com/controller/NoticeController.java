@@ -17,7 +17,7 @@ public class NoticeController {
 	@Resource(name="noticeMapper")
 	NoticeMapper noticeMapper;
 	
-	@RequestMapping("/getAllNotices.do")
+	@RequestMapping("/getNoticesByPage.do")
 	public @ResponseBody List<Notice> getNoticesByPage(Notice notice){
 		try {
 			Thread.sleep(1000);

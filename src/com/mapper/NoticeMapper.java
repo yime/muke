@@ -11,6 +11,7 @@ public interface NoticeMapper {
 	public int getTotal();
 	public Notice getContent(int id);
 	public int addNotice(Notice notice);
+	
 
 	
 
