@@ -14,7 +14,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 
 <select id="getVideos" parameterType="Section" resultMap="videoMap">
 
-	select v.name as name, c.name as section_name from video v join section sc on v.section_id=sc.id where sc.id=#{sectionId}
+	select v.name as name, c.name as section_name, v.id as id, c.id as section_id from video v join section sc on v.section_id=sc.id where sc.id=#{sectionId}
 
 </select>
    

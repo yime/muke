@@ -12,20 +12,20 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
    </resultMap>
    
    <select id="getAllNotices" resultMap="noticemap">
-   	select * from notice;
+   	select n.*,c.* from notice n, course c where n.course_id=c.id;
    </select>
    
    <select id="getNoticesByPage" parameterType="Notice" resultMap="noticemap">
-       select * from notice order by post_time limit #{start},#{pageSize}
+       select n.* from notice n, course c where n.course_id=c.id and n.id=#{id} order by post_time limit #{start},#{pageSize}
    </select>
    
    <select id="getTotal" resultType="int">
-       select count(*) from notice
+       select count(n.*) from notice n, course c where n.course_id=c.id;
    
    </select>
    
    <insert id="addNotice" parameterType="Notice">
-   	insert into notice(title,content,post_time) values(#{title},#{content},now())
+   	insert into notice(title,content,post_time,course_id) values(#{title},#{content},now(),#{courseId)
    
    </insert>
    

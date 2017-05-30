@@ -24,7 +24,8 @@ public class VideoController {
 	@RequestMapping("/play")
 	public @ResponseBody String getVideo(Section s,@RequestParam("video_id") int i){
 		List<Video> vids = vMapper.getVideosBySection(s);
-		return vids.get(i).getAddr();
+		String addr =  vids.get(i).getAddr();
+		return addr;
 		
 	}
 
