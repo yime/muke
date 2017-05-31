@@ -187,10 +187,11 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     				<li>第一章：XXX</li>
     				<li class="active">第一节：XXX</li>
 				</ol>
-				
+			<div>
+			</div>
     		<div class="main-wrap">
     			<video ishivideo="true" autoplay="true" isrotate="false" autoHide="true">
-    				<source src=$() type="video/mp4"> </source>
+    				<source src=${addr}  type="video/mp4"> 
 				</video>
     		</div>
     			

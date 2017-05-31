@@ -29,38 +29,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     	<script type="text/javascript" src="js/jquery.cookie.js"></script>
     	<script type="text/javascript" src="js/nav.js"></script>
     	<script type="text/javascript" src="uEditor/uEditor.js"></script>
-    	<script type="text/javascript">
-    		$(function(){
-    			$.get("getChapters.do",function(data){
-    				$.each(data,function(i,value){
-    				$div = $("<div class='titleTab tt'><span class='caret'></span>\
-    						<h3 class='title'>"+"第"+value.id+"章："+value.name+"</h3></div>");
-    					
-    					
-    				
-    				
-    				$("#cm").append($div+'\n');
-    				});
-    			});
-    		
-    		});
-    		
-    		$("#tt").click(function(){
-    			$.get("getSubchapters.do",function(data){
-    				$.each(data,function(i,value){
-    					$div = $("<div class='subTab'>\
-        						<h4 class='title'>"+"第"+value.id+"节："+value.name+"</h4></div>");
-        					
-        					
-        				
-        				
-        				$("#tt").append($div+'\n');
-    				});
-    			});
-    		});
-    	
-    	</script>
-		
+
 		
 		
 	
@@ -179,13 +148,33 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     			</div>
     			
     			<div>
-    				<h2>课件、测验</h2>
+    				<h2>课件</h2>
     				
     			
     			</div>
     			
     			
-    			<div class="chapterMenu cm">
+    			<div class="chapterMenu" id="cm">
+    			<script>
+    				$(function(){
+    					$.get("getChapters.do",function(data){
+    						$.each(data,function(i,value){
+    							$("#cm").append("<div class='titleTab' id='tt'><span class='caret'></span>\
+    						<h3 class='title'>"+"第"+value.id+"章："+value.name+"</h3></div>+\n");
+    							});
+    				});
+    		
+    			});
+    			
+    			$("#tt").click(function(){
+    			$.get("getSections.do",function(data){
+    				$.each(data,function(i,value){
+    					$("#tt").append("<div class='subTab'>\
+        						<h4 class='title'>"+"第"+value.id+"节："+value.name+"</h4></div>");
+    					});
+    				});
+    			});
+    			</script>
     				<div class="titleTab">
     					<span class="caret"></span>
     					<h3 class="title"></h3>

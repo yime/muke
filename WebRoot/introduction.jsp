@@ -156,7 +156,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     			</div>
     			
     	<div class="col-md-9" style="z-index: 0">
-         <c:forEach items="${getNoticesByPage}" var="notice">
+         <c:forEach items="${notices}" var="notice">
               
           <div class="panel panel-default">
               

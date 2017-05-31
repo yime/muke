@@ -7,6 +7,7 @@ import javax.annotation.Resource;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.servlet.ModelAndView;
 
 import com.mapper.NoticeMapper;
 import com.po.Notice;
@@ -25,15 +26,17 @@ public class NoticeController {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		List<Notice> list;
+		List<Notice> notices;
 
 		notice.setTotalRecords(noticeMapper.getTotal());
 		if(notice.getCurrentPage()==0){
 			notice.setCurrentPage(1);
 		}
 		
-		list = noticeMapper.getNoticesByPage(notice);
-		return list;
+		notices = noticeMapper.getNoticesByPage(notice);
+
+
+		return notices;
 	}
 	
 	@RequestMapping("/addNotice.do")
