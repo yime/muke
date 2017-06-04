@@ -179,29 +179,102 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 
 
     		<div class="col main-col">
-    		
+    			<script>
+					$(function(){
+						$.get("getChapters.do",function(data){
+    						$.each(data,function(i,value){
+    							$("#chapters").append("<option value='"+ +"'>"+"第"+value.id+"节："+value.name+"</option>");
+    							});
+    				});
+					})
+					
+					$(function(){
+						$.get("getSections.do",function(data){
+    						$.each(data,function(i,value){
+    							$("#sections").append("<option value='"+ +"'>"+"第"+value.id+"节："+value.name+"</option>");
+    							});
+    				});
+					})
+    			</script>
     			
     		
     			<ol class="breadcrumb bc">
-    				<li><a href="#">概率论与数理统计</a></li>
-    				<li>第一章：XXX</li>
-    				<li class="active">第一节：XXX</li>
+    				<li>
+    					<a href="../introduction.jsp">概率论与数理统计</a>
+    				</li>
+    				<!--  <li>第一章：XXX</li>
+    				<li class="active">第一节：XXX</li>-->
+    				<li>
+    					<select id="chapters" onchange="research()" aria-controls="DataTables_Table_0" size="1">
+   							<!--  <option selected="selected" value="10">10</option>
+   							<option value="25">25</option>
+   							<option value="50">50</option>
+   							<option value="100">100</option> -->
+   						</select>
+   					</li>
+   					<li>
+    					<select id="videos" onchange="research()" aria-controls="DataTables_Table_0" size="1">
+   							<!-- <option selected="selected" value="10">10</option>
+   							<option value="25">25</option>
+   							<option value="50">50</option>
+   							<option value="100">100</option> -->
+   						</select>
+   					</li>
 				</ol>
-			<div>
-			</div>
+				
+				<div class="f-fl u-learnBCUI f-cb">
+					<a class="f-fl f-fc3 f-f0 link" href="#/learn/content" target="_self">课件</a>
+					
+					<span class="f-icon f-fl icon"></span>
+					
+					<div class="f-fl j-chapter u-select">
+						<div class="up j-up f-thide">第三周：程序控制结构</div>
+							<div class="down f-bg j-list" style="display: none;">
+							<div class="f-thide list f-cb">第一周：程序设计的基础知识</div>
+							<div class="f-thide list f-cb">第二周：数据类型、运算符与表达式、变量赋值与简单I/O操作</div>
+							<div class="f-thide list f-cb">第三周：程序控制结构</div>
+							<div class="f-thide list f-cb">第四周：函数与递归函数</div>
+							<div class="f-thide list f-cb">第五周：字符串</div>
+							<div class="f-thide list f-cb">第六周：列表与元组</div>
+							<div class="f-thide list f-cb">第七周：字典与集合</div>
+							
+						</div>
+					</div>
+					
+					<span class="f-icon f-fl icon"></span>
+					
+					<div class="f-fl j-lesson u-select">
+						<div class="up j-up f-thide">3.1：选择结构</div>
+							<div class="down f-bg j-list" style="display: none;">
+							<div class="f-thide list f-cb">3.1：选择结构</div>
+							<div class="f-thide list f-cb">3.2：循环结构</div>
+							<div class="f-thide list f-cb"">3.3：编程练习</div>
+						</div>
+					</div>
+				</div>
+
+				
+
+
+			
     		<div class="main-wrap">
-    			<video ishivideo="true" autoplay="true" isrotate="false" autoHide="true">
-    				<source src=${addr}  type="video/mp4"> 
+    				<script>
+    					$(function(){
+    						$.get("play.do",function(data){
+    							$("#vidsrc").append("<source src="+"'${addr}'"+"type='video/mp4'>");
+    						})
+    						
+    					})
+    				</script>
+    			<video ishivideo="true" autoplay="true" isrotate="false" autoHide="true" id="vidsrc">
+    				<!--  <source src=""  type="video/mp4"> -->
+    				
 				</video>
     		</div>
     			
     			
     			
-    		</div>
     		
-
-    	
-    	</div>
     
     
     </div>

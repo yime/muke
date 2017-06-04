@@ -147,6 +147,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     				<h5>范红军、陈振宇</h5>
     			</div>
     			
+    			
+    			
     			<div>
     				<h2>课件</h2>
     				
@@ -159,8 +161,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     				$(function(){
     					$.get("getChapters.do",function(data){
     						$.each(data,function(i,value){
-    							$("#cm").append("<div class='titleTab' id='tt'><span class='caret'></span>\
-    						<h3 class='title'>"+"第"+value.id+"章："+value.name+"</h3></div>+\n");
+    							$("#cm").append("<div class='titleTab' id='tt'><span class='caret'></span><h3 class='title'>"+"第"+value.id+"章："+value.name+"</h3></div>");
     							});
     				});
     		
@@ -169,13 +170,12 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     			$("#tt").click(function(){
     			$.get("getSections.do",function(data){
     				$.each(data,function(i,value){
-    					$("#tt").append("<div class='subTab'>\
-        						<h4 class='title'>"+"第"+value.id+"节："+value.name+"</h4></div>");
+    					$("#tt").append("<div class='subTab'><h4 class='title'>"+"第"+value.id+"节："+value.name+"</h4></div>");
     					});
     				});
     			});
     			</script>
-    				<div class="titleTab">
+    				<!--  <div class="titleTab">
     					<span class="caret"></span>
     					<h3 class="title"></h3>
     				
@@ -184,7 +184,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     				<div class="subTab">
     					<h4 class="title"></h4>
     				
-    				</div>
+    				</div>-->
     			
 
 				</div>

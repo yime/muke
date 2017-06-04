@@ -11,7 +11,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import com.mapper.ChapterMapper;
 import com.po.Chapter;
 import com.po.Course;
-import com.po.Video;
 
 @Controller
 public class ChapterController {

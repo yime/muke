@@ -6,11 +6,13 @@ import javax.annotation.Resource;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.mapper.SectionMapper;
 import com.po.Chapter;
 import com.po.Section;
+
 
 @Controller
 public class SectionController {
@@ -20,6 +22,13 @@ public class SectionController {
 	@RequestMapping("/getSection.do")
 	public @ResponseBody List<Section> getSections(Chapter c){
 		return sMapper.getSections(c);
+	}
+	
+	@RequestMapping("/play.do")
+	public @ResponseBody String getVideo(Section s){
+		String addr = sMapper.getVideo(s);
+		return addr;
+		
 	}
 	
 

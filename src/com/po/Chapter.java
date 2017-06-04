@@ -7,7 +7,7 @@ public class Chapter {
 	private int id;
 	private String name;
 	private int courseId;
-	private List<Video> videoList;
+	private List<Section> sectionList;
 	
 	public int getId() {
 		return id;
@@ -27,12 +27,13 @@ public class Chapter {
 	public void setCourseId(int courseId) {
 		this.courseId = courseId;
 	}
-	public List<Video> getVideoList() {
-		return videoList;
+	public List<Section> getSectionList() {
+		return sectionList;
 	}
-	public void setVideoList(List<Video> videoList) {
-		this.videoList = videoList;
+	public void setSectionList(List<Section> sectionList) {
+		this.sectionList = sectionList;
 	}
+
 	
 	
 
